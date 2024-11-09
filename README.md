@@ -29,4 +29,11 @@
 - SCHOOL_DEPART 07:45, STATION_DEPART 10:49 -> 이렇게 2시간걸리는 말도안되는 시간표
 
 ## V4
-
+- RandomForestRegressor로 다시 바꿈
+- 셔틀 마지막차는 거의 고정으로 오니까 FIXED로 해서 FIXED = false인 데이터에 한해서 수정하기로 함 (gStation3)
+- 최대한 꼼꼼히 전처리 함
+- V4-1은 FIXED = true를 빨리 제외했더니 데이터중 정확하게 온 버스를 건너뛰고 이상한 곳에 매칭이 되어서 오차가 커짐
+- V4-2에서 FIXED = true는 나중에 빼는걸로 수정함
+- 예측값 파일 나름 만족스러움
+- 근데 R2 Score너무 낮게 나옴
+- ? 왜 ?
